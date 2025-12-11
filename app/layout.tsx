@@ -3,8 +3,8 @@ import { Geist, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
-const _geist = Geist({ subsets: ["latin"] });
-const _geistMono = Geist_Mono({ subsets: ["latin"] });
+const geist = Geist({ subsets: ["latin"] });
+const geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: 'Dezy It',
@@ -22,7 +22,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-       <script
+      <head>
+        <script
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
               new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -31,9 +32,9 @@ export default function RootLayout({
             })(window,document,'script','dataLayer','GTM-MDB6DFMJ');`,
           }}
         />
-
-      <body className={`font-sans antialiased`}>
-          <noscript>
+      </head>
+      <body className={`${geist.className} font-sans antialiased`}>
+        <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-MDB6DFMJ"
             height="0"
