@@ -31,7 +31,6 @@ export default function RootLayout({
             })(window,document,'script','dataLayer','GTM-MDB6DFMJ');`,
           }}
         />
-        <script src="https://dezyit-agent-server-hhb4ggakb7ezgscc.centralus-01.azurewebsites.net/api/chat-bot/widget.js?chatbotId=690adf4d37c10fc34527b2c3" ></script>
 
       <body className={`font-sans antialiased`}>
           <noscript>
