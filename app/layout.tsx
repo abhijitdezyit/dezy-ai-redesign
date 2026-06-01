@@ -31,6 +31,17 @@ export default function RootLayout({
           __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-MDB6DFMJ');`,
         }}
       />
+
+      <script>
+  (function () {
+    var s = document.createElement('script');
+    s.src = 'https://agent-api-ten.vercel.app/widget.js';
+    s.setAttribute('data-widget-key', 'wk_c42a0b9a0bf540f88eadd78cabf004cb');
+    s.setAttribute('data-api-url', 'https://agent-api-ten.vercel.app');
+    s.defer = true;
+    document.head.appendChild(s);
+  })();
+</script>
       {/* End Google Tag Manager */}
       
       <body className={`${geist.className} font-sans antialiased`}>
