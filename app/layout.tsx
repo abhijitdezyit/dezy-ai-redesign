@@ -33,9 +33,9 @@ export default function RootLayout({
       />
       <Script
         id="dezy-widget"
-        src="https://agent-api-ten.vercel.app/widget.js"
-        data-widget-key="wk_b45e72ed87d24711a996d3f63609be8e"
-        data-api-url="https://agent-api-ten.vercel.app"
+        src="https://agent-api-prod.vercel.app/widget.js"
+        data-widget-key="wk_58936e06e8864437bf1396f2c567d4b1"
+        data-api-url="https://agent-api-prod.vercel.app"
         defer
         strategy="afterInteractive"
       />
