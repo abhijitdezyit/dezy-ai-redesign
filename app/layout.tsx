@@ -29,9 +29,16 @@ export default function RootLayout({
       
       <body className={`${geist.className} font-sans antialiased`}>
         {/* Google Tag Manager (noscript) */}
-        <noscript dangerouslySetInnerHTML={{
-          __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MDB6DFMJ" height="0" width="0" style="display:none;visibility:hidden"></iframe>`
-        }} />
+           <script>
+  (function () {
+    var s = document.createElement('script');
+    s.src = 'https://agent-api-prod.vercel.app/widget.js';
+    s.setAttribute('data-widget-key', 'wk_99c1dbe124de4b97b27d6ecb5b6fa897');
+    s.setAttribute('data-api-url', 'https://agent-api-prod.vercel.app');
+    s.defer = true;
+    document.head.appendChild(s);
+  })();
+</script>
         {/* End Google Tag Manager (noscript) */}
         
         {children}
